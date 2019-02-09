@@ -1,9 +1,3 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Registrarse</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
   <ion-list>
     <ion-grid>
@@ -13,7 +7,7 @@
                 <ion-input placeholder="Nombre" [(ngModel)]="userName"></ion-input>
               </ion-item>
         </ion-col>
-        <ion-col col -6>
+        <ion-col col-6>
             <ion-item>
                 <ion-input placeholder="Apellido" [(ngModel)]="userLastname"></ion-input>
               </ion-item>
@@ -39,5 +33,5 @@
       </ion-item>
   </ion-list>
 
-  <button ion-buttom full (click)="register()">Registrar</button>
+  <button ion-button full (click)="register()">Registrar</button>
 </ion-content>

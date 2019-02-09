@@ -17,7 +17,7 @@ import { RegisterPage } from '../register/register';
 export class LoginPage {
 
   username:string;
-  pasword:string;
+  password:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -28,7 +28,7 @@ export class LoginPage {
 
   login(){
     console.log("Usuario: " +this.username);
-    console.log("Contraseña: " +this.pasword);
+    console.log("Contraseña: " +this.password);
   }
 
   goRegister(){
