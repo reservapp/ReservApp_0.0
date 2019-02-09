@@ -1,9 +1,57 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Cuenta</ion-title>
+    <ion-title>Mi cuenta</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 padding center>
+          <ion-icon name="camera" item-start></ion-icon>
+      </ion-col>
 
+      <ion-col>
+          <ion-avatar>Nombre usuario</ion-avatar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4>
+      </ion-col>
+
+      <ion-col col-7>
+          <button ion-button full (click) = "modifyProfile()">Modificar perfil</button>
+      </ion-col>
+
+      <ion-col col-1>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-list>
+
+    <ion-list-header>Opciones</ion-list-header>
+    <ion-item>
+      <ion-icon name="lock" item-start></ion-icon>
+      Cambiar contraseña
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="card" item-start></ion-icon>
+      Método de pago
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="help" item-start></ion-icon>
+      Ayuda
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="log-out" item-start></ion-icon>
+      Cerrar sesión
+    </ion-item>
+
+  </ion-list>
 </ion-content>

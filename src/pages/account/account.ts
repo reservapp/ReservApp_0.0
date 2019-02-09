@@ -22,4 +22,7 @@ export class AccountPage {
     console.log('ionViewDidLoad AccountPage');
   }
 
+  modifyProfile(){
+
+  }
 }

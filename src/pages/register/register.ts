@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Alert } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the RegisterPage page.
@@ -14,10 +14,12 @@ import { IonicPage, NavController, NavParams, Alert } from 'ionic-angular';
   templateUrl: 'register.html',
 })
 export class RegisterPage {
-  username:string;
+  userName:string;
+  userLastname:string;
   email:string;
   password:string;
   repassword:string;
+  phoneNumber: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -27,7 +29,7 @@ export class RegisterPage {
   }
 
   register(){
-    if(this.username.length <= 0 || this.password.length <= 0 || this.repassword.length <= 0 || this.email.length <= 0){
+    if(this.userName.length <= 0 || this.userLastname.length <= 0 || this.password.length <= 0 || this.repassword.length <= 0 || this.email.length <= 0 || this.phoneNumber.length <= 0){
       alert("Por favor llene todos los campos");
     }
 
