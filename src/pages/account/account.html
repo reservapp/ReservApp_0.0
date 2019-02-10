@@ -4,18 +4,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-grid>
+
     <ion-row>
-      <ion-col col-4 padding center>
-          <ion-avatar>
-              <ion-icon name="camera" item-start large></ion-icon>
-          </ion-avatar>
+      <ion-col>
+        <ion-item no-lines>
+            <ion-avatar>
+                <ion-icon name="person" large item-start></ion-icon>
+            </ion-avatar>
+        </ion-item>
       </ion-col>
 
       <ion-col>
-          <ion-avatar>Nombre usuario</ion-avatar>
+          <p>Nombre de usuario</p>
       </ion-col>
+
     </ion-row>
 
     <ion-row>
@@ -23,7 +27,7 @@
       </ion-col>
 
       <ion-col col-7>
-          <button ion-button full round (click) = "modifyProfile()">Modificar perfil</button>
+          <button ion-button full round color="secondary" (click) = "modifyProfile()">Modificar perfil</button>
       </ion-col>
 
       <ion-col col-1>
@@ -32,27 +36,31 @@
 
   </ion-grid>
 
-  <ion-list>
+  <ion-list no-lines>
 
-    <ion-list-header>Opciones</ion-list-header>
+    <ion-item>
+        <ion-icon name="calendar" item-start></ion-icon>
+        <button ion-button block full round>Mis reservaciones</button>
+      </ion-item>
+
     <ion-item>
       <ion-icon name="lock" item-start></ion-icon>
-      Cambiar contraseña
+      <button ion-button block full round>Cambiar contrasena</button>
     </ion-item>
 
     <ion-item>
       <ion-icon name="card" item-start></ion-icon>
-      Método de pago
+      <button ion-button block full round>Metodo de pago</button>
     </ion-item>
 
     <ion-item>
       <ion-icon name="help" item-start></ion-icon>
-      Ayuda
+      <button ion-button block full round>Ayuda</button>
     </ion-item>
 
     <ion-item>
-      <ion-icon name="log-out" item-start></ion-icon>
-      Cerrar sesión
+      <ion-icon name="log-out" (click)="logOut()" item-start></ion-icon>
+      <button ion-button block full round>Cerrar sesión</button>
     </ion-item>
 
   </ion-list>
