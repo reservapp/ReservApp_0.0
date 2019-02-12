@@ -7,6 +7,16 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-grid>
+      <ion-searchbar></ion-searchbar> <!--Done by jhonncell-->
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-label>Fecha</ion-label>
+            <ion-icon name="calendar"></ion-icon>
+            <ion-datetime display-format="DD,MM YYYY HH:mm"></ion-datetime>
+        </ion-item>
+      </ion-col>
 
   <ion-list>
     <ion-item>
@@ -20,4 +30,32 @@
 
   </ion-list>
 
+      <ion-col col-6>
+          <ion-item>
+              <ion-input placeholder="Apellido" required="true" [(ngModel)]="userLastname"></ion-input>
+            </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <ion-item>
+            <ion-icon name="at"></ion-icon>
+              <ion-input placeholder="Correo" required="true" [(ngModel)]="email"></ion-input>
+          </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-item no-lines>
+            <ion-label color="thirdColorSet">Cantidad de mesas/lugares</ion-label>
+            <ion-range [(ngModel)]="volume">
+              <ion-icon range-left name="pricetag" color="secondary"></ion-icon>
+              <ion-icon range-right name="pricetags" color="secondary"></ion-icon>
+            </ion-range>
+          </ion-item>
+    </ion-row>
+  </ion-grid>
+
+  <button ion-button block full round>Verificar</button>
 </ion-content>
