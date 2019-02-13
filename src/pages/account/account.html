@@ -23,45 +23,76 @@
     </ion-row>
 
     <ion-row>
-      <ion-col col-4>
+      <ion-col col-3>
       </ion-col>
 
       <ion-col col-7>
-          <button ion-button full round color="secondary" (click) = "modifyProfile()">Modificar perfil</button>
+        <button ion-button round full color="secondary" (click) = "modifyProfile()">Modificar perfil</button>
       </ion-col>
 
-      <ion-col col-1>
+      <ion-col col-2>
       </ion-col>
     </ion-row>
 
   </ion-grid>
 
   <ion-list no-lines>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col>
+            <ion-item>
+                <ion-icon name="calendar" item-start></ion-icon>
+                <button ion-button block full round>Mis reservaciones</button>
+            </ion-item>
+        </ion-col>
+        <ion-col col-2></ion-col>
+      </ion-row>
 
-    <ion-item>
-        <ion-icon name="calendar" item-start></ion-icon>
-        <button ion-button block full round>Mis reservaciones</button>
-      </ion-item>
+      <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col>
+            <ion-item>
+                <ion-icon name="lock" item-start></ion-icon>
+                <button ion-button block full round>Cambiar contrasena</button>
+              </ion-item>
+        </ion-col>
+        <ion-col col-2></ion-col>
+      </ion-row>
 
-    <ion-item>
-      <ion-icon name="lock" item-start></ion-icon>
-      <button ion-button block full round>Cambiar contrasena</button>
-    </ion-item>
+      <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col>
+            <ion-item>
+                <ion-icon name="card" item-start></ion-icon>
+                <button ion-button block full round>Metodo de pago</button>
+            </ion-item>
+        </ion-col>
+        <ion-col col-2></ion-col>
+      </ion-row>
 
-    <ion-item>
-      <ion-icon name="card" item-start></ion-icon>
-      <button ion-button block full round>Metodo de pago</button>
-    </ion-item>
+      <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col>
+            <ion-item>
+              <ion-icon name="help" item-start></ion-icon>
+              <button ion-button block full round>Ayuda</button>
+            </ion-item>
+        </ion-col>
+        <ion-col col-2></ion-col>
+      </ion-row>
 
-    <ion-item>
-      <ion-icon name="help" item-start></ion-icon>
-      <button ion-button block full round>Ayuda</button>
-    </ion-item>
+      <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col>
+          <ion-item>
+              <ion-icon name="log-out" (click)="logOut()" item-start></ion-icon>
+              <button ion-button block full round>Cerrar sesión</button>
+          </ion-item>
+        </ion-col>
+        <ion-col col-2></ion-col>
+      </ion-row>
 
-    <ion-item>
-      <ion-icon name="log-out" (click)="logOut()" item-start></ion-icon>
-      <button ion-button block full round>Cerrar sesión</button>
-    </ion-item>
-
+    </ion-grid>
   </ion-list>
 </ion-content>

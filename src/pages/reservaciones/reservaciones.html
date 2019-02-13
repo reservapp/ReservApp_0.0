@@ -7,34 +7,36 @@
 </ion-header>
 
 <ion-content padding>
+    <ion-searchbar></ion-searchbar> <!--Done by jhonncell-->
   <ion-grid>
-      <ion-searchbar></ion-searchbar> <!--Done by jhonncell-->
+
     <ion-row>
       <ion-col>
-        <ion-item>
-            <ion-label>Fecha</ion-label>
-            <ion-icon name="calendar"></ion-icon>
-            <ion-datetime display-format="DD,MM YYYY HH:mm"></ion-datetime>
-        </ion-item>
-      </ion-col>
-
-  <ion-list>
-    <ion-item>
-          <ion-label>Fecha de la reservacion</ion-label>
-          <ion-datetime display-format="DD,MM YYYY HH:mm"></ion-datetime>
-    </ion-item>
-    <ion-item>
-        <ion-label>Hora de la reservacion</ion-label>
-        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
-      </ion-item>
-
-  </ion-list>
-
-      <ion-col col-6>
           <ion-item>
-              <ion-input placeholder="Apellido" required="true" [(ngModel)]="userLastname"></ion-input>
+              <ion-label>Fecha de la reservacion</ion-label>
+              <ion-datetime display-format="DD,MM YYYY HH:mm" required="true"></ion-datetime>
             </ion-item>
       </ion-col>
+      <ion-col>
+          <ion-item>
+              <ion-label>Hora de la reservacion</ion-label>
+              <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" required="true"></ion-datetime>
+            </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6>
+          <ion-item>
+            <ion-input placeholder="Nombre" required="true" [(ngModel)]="userName"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col col-6>
+          <ion-item>
+            <ion-input placeholder="Apellido" required="true" [(ngModel)]="userLastname"></ion-input>
+          </ion-item>
+        </ion-col>
     </ion-row>
 
     <ion-row>
