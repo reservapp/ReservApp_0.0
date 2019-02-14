@@ -30,6 +30,7 @@ export class LoginPage {
   login(){
     console.log("Usuario: " +this.username);
     console.log("Contraseña: " +this.password);
+    this.navCtrl.setRoot(TabsPage);
     this.navCtrl.push(TabsPage);
   }
 

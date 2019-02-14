@@ -28,6 +28,7 @@ export class AccountPage {
   }
 
   logOut(){
+    this.navCtrl.setRoot(LoginPage);
     this.navCtrl.push(LoginPage);
   }
 }

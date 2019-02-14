@@ -11,33 +11,32 @@
       <ion-col>
         <ion-item no-lines>
             <ion-avatar>
-                <ion-icon name="person" large item-start></ion-icon>
+                <ion-icon name="contact" large item-start></ion-icon>
             </ion-avatar>
         </ion-item>
       </ion-col>
 
       <ion-col>
-          <p>Nombre de usuario</p>
+          <ion-label>Nombre de usuario</ion-label>
       </ion-col>
 
-    </ion-row>
-
-    <ion-row>
-      <ion-col col-3>
-      </ion-col>
-
-      <ion-col col-7>
-        <button ion-button round full color="secondary" (click) = "modifyProfile()">Modificar perfil</button>
-      </ion-col>
-
-      <ion-col col-2>
-      </ion-col>
     </ion-row>
 
   </ion-grid>
 
   <ion-list no-lines>
     <ion-grid>
+      <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-icon name="settings" item-start></ion-icon>
+            <button ion-button round full (click) = "modifyProfile()">Modificar perfil</button>
+          </ion-item>
+        </ion-col>
+        <ion-col col-2></ion-col>
+      </ion-row>
+
       <ion-row>
         <ion-col col-1></ion-col>
         <ion-col>
@@ -87,7 +86,7 @@
         <ion-col>
           <ion-item>
               <ion-icon name="log-out" item-start></ion-icon>
-              <button ion-button block full round (click)="logOut()">Cerrar sesión</button>
+              <button ion-button block full round navPop color="danger" (click)="logOut()">Cerrar sesión</button>
           </ion-item>
         </ion-col>
         <ion-col col-2></ion-col>
