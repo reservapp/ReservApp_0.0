@@ -16,7 +16,11 @@ import { LoginPage } from '../login/login';
 })
 export class AccountPage {
 
+  Username_:string = "John Doe";
+  UserName:string = "";
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.UserName = this.Username_;
   }
 
   ionViewDidLoad() {
@@ -28,7 +32,6 @@ export class AccountPage {
   }
 
   logOut(){
-    this.navCtrl.setRoot(LoginPage);
     this.navCtrl.push(LoginPage);
   }
 }

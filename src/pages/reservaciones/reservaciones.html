@@ -1,63 +1,66 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Reservaciones
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-    <ion-searchbar></ion-searchbar> <!--Done by jhonncell-->
-  <ion-grid>
-
-    <ion-row>
-      <ion-col>
-          <ion-item>
-              <ion-label>Fecha de la reservacion</ion-label>
-              <ion-datetime display-format="DD,MM YYYY HH:mm" required="true"></ion-datetime>
+    <ion-navbar>
+      <ion-title>
+        Reservaciones
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+      <ion-searchbar></ion-searchbar> <!--Done by jhonncell-->
+    <ion-grid>
+  
+      <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-icon name="calendar"></ion-icon>
+                <ion-label>Fecha de la reservacion</ion-label>
+                <ion-datetime display-format="DD,MM YYYY HH:mm" required="true"></ion-datetime>
             </ion-item>
-      </ion-col>
-      <ion-col>
-          <ion-item>
+        </ion-col>
+        <ion-col>
+            <ion-item>
+              <ion-icon name="clock"></ion-icon>
               <ion-label>Hora de la reservacion</ion-label>
               <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" required="true"></ion-datetime>
             </ion-item>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col col-6>
-          <ion-item>
-            <ion-input placeholder="Nombre" required="true" [(ngModel)]="userName"></ion-input>
-          </ion-item>
         </ion-col>
-
+      </ion-row>
+  
+      <ion-row>
         <ion-col col-6>
-          <ion-item>
-            <ion-input placeholder="Apellido" required="true" [(ngModel)]="userLastname"></ion-input>
-          </ion-item>
+            <ion-item>
+                <ion-icon name="person"></ion-icon>
+              <ion-input placeholder="Nombre" required="true" [(ngModel)]="userName"></ion-input>
+            </ion-item>
+          </ion-col>
+  
+          <ion-col col-6>
+            <ion-item>
+              <ion-input placeholder="Apellido" required="true" [(ngModel)]="userLastname"></ion-input>
+            </ion-item>
+          </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-icon name="at"></ion-icon>
+                <ion-input placeholder="Correo" required="true" [(ngModel)]="email"></ion-input>
+            </ion-item>
         </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-          <ion-item>
-            <ion-icon name="at"></ion-icon>
-              <ion-input placeholder="Correo" required="true" [(ngModel)]="email"></ion-input>
+      </ion-row>
+  
+      <ion-row>
+          <ion-item no-lines>
+              <ion-label color="thirdColorSet">Cantidad de mesas/lugares</ion-label>
+              <ion-range min="0" max="10" pin="true" step="1" [(ngModel)]="cantPeople">
+                <ion-icon range-left name="pricetag" color="primary"></ion-icon>
+                <ion-icon range-right name="pricetags" color="primary"></ion-icon>
+              </ion-range>
           </ion-item>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-        <ion-item no-lines>
-            <ion-label color="thirdColorSet">Cantidad de mesas/lugares</ion-label>
-            <ion-range [(ngModel)]="volume">
-              <ion-icon range-left name="pricetag" color="secondary"></ion-icon>
-              <ion-icon range-right name="pricetags" color="secondary"></ion-icon>
-            </ion-range>
-          </ion-item>
-    </ion-row>
-  </ion-grid>
-
-  <button ion-button block full round>Verificar</button>
-</ion-content>
+      </ion-row>
+    </ion-grid>
+  
+    <button ion-button block full round>Verificar</button>
+  </ion-content>
