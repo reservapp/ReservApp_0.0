@@ -19,12 +19,12 @@
               </ion-item>
         </ion-col>
       </ion-row>
-    </ion-grid>
+      </ion-grid>
 
 
-    <ion-item>
-        <ion-input placeholder="Correo" required="true" [(ngModel)]="email"></ion-input>
-    </ion-item>
+      <ion-item>
+          <ion-input placeholder="Correo" required="true" [(ngModel)]="email"></ion-input>
+      </ion-item>
 
       <ion-item>
           <ion-input placeholder="Contraseña" required="true" type="password" [(ngModel)]="password"></ion-input>
@@ -37,7 +37,7 @@
       <ion-item>
           <ion-input placeholder="Numero de telefono" required="true" type="tel" inputmode="tel" maxlength="10" [(ngModel)]="phoneNumber"></ion-input>
       </ion-item>
-  </ion-list>
+   </ion-list>
 
   <button ion-button block full round (click) ="register()">Registrar</button>
 </ion-content>
