@@ -32,6 +32,8 @@ export class AccountPage {
   }
 
   logOut(){
+    this.navCtrl.popAll();
+    this.navCtrl.setRoot(LoginPage);
     this.navCtrl.push(LoginPage);
   }
 }
