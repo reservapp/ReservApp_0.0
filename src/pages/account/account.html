@@ -4,30 +4,30 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding center text-center>
   <ion-grid>
 
     <ion-row>
-      <ion-col col-1></ion-col>
-      <ion-col col-3>
-        <ion-item no-lines>
+      <ion-col>
+        <ion-item text-center no-lines>
           <ion-avatar>
             <ion-img src="../../assets/imgs/user.jpg"></ion-img>
         </ion-avatar>
        </ion-item>
      </ion-col>
+    </ion-row>
 
+    <ion-row>
       <ion-col>
         <ion-label>{{UserName}}</ion-label>
       </ion-col>
-
     </ion-row>
 
   </ion-grid>
 
   <ion-list no-lines>
     <ion-grid>
-      <ion-row>
+      <ion-row text-center>
         <ion-col col-1></ion-col>
         <ion-col>
           <ion-item>
@@ -35,10 +35,10 @@
             <button ion-button round full (click) = "modifyProfile()">Modificar perfil</button>
           </ion-item>
         </ion-col>
-        <ion-col col-2></ion-col>
+        <ion-col col-1></ion-col>
       </ion-row>
 
-      <ion-row>
+      <ion-row text-center>
         <ion-col col-1></ion-col>
         <ion-col>
             <ion-item>
@@ -46,10 +46,10 @@
                 <button ion-button block full round>Mis reservaciones</button>
             </ion-item>
         </ion-col>
-        <ion-col col-2></ion-col>
+        <ion-col col-1></ion-col>
       </ion-row>
 
-      <ion-row>
+      <ion-row text-center>
         <ion-col col-1></ion-col>
         <ion-col>
             <ion-item>
@@ -57,10 +57,10 @@
                 <button ion-button block full round>Cambiar contrasena</button>
               </ion-item>
         </ion-col>
-        <ion-col col-2></ion-col>
+        <ion-col col-1></ion-col>
       </ion-row>
 
-      <ion-row>
+      <ion-row text-center>
         <ion-col col-1></ion-col>
         <ion-col>
             <ion-item>
@@ -68,10 +68,10 @@
                 <button ion-button block full round>Metodo de pago</button>
             </ion-item>
         </ion-col>
-        <ion-col col-2></ion-col>
+        <ion-col col-1></ion-col>
       </ion-row>
 
-      <ion-row>
+      <ion-row text-center>
         <ion-col col-1></ion-col>
         <ion-col>
             <ion-item>
@@ -79,10 +79,10 @@
               <button ion-button block full round>Ayuda</button>
             </ion-item>
         </ion-col>
-        <ion-col col-2></ion-col>
+        <ion-col col-1></ion-col>
       </ion-row>
 
-      <ion-row>
+      <ion-row text-center>
         <ion-col col-1></ion-col>
         <ion-col>
           <ion-item>
@@ -90,7 +90,7 @@
               <button ion-button block full round navPop color="danger" (click)="logOut()">Cerrar sesión</button>
           </ion-item>
         </ion-col>
-        <ion-col col-2></ion-col>
+        <ion-col col-1></ion-col>
       </ion-row>
 
     </ion-grid>
