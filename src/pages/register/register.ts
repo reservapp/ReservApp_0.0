@@ -30,13 +30,12 @@ export class RegisterPage {
   }
 
   register(){
-    if(this.userName.length == 0 || this.userLastname.length == 0 || this.password.length == 0 || this.repassword.length == 0 || this.email.length == 0 || this.phoneNumber.length == 0){
-      alert("Por favor llene todos los campos");
-    }
+    // if(this.userName.length == 0 || this.userLastname.length == 0 || this.password.length == 0 || this.repassword.length == 0 || this.email.length == 0 || this.phoneNumber.length == 0){
+    //   alert("Por favor llene todos los campos");
+    // }
 
     if (this.password != this.repassword) {
       alert("Las contraseñas no coinciden");
-      
     }
 
     this.navCtrl.push(TabsPage);

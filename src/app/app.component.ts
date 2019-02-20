@@ -18,7 +18,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
       statusBar.styleLightContent();
-      statusBar.backgroundColorByHexString("#3c5ed5");
+      statusBar.backgroundColorByHexString("#1079f1");
     });
   }
 }
