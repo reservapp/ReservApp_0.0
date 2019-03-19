@@ -5,5 +5,39 @@
 </ion-header>
 
 <ion-content padding>
+    <ion-grid>
+        <ion-row></ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-icon name="person" item-start></ion-icon>
+                    <ion-input placeholder = "Nombre" clearInput value = "John" required="true"></ion-input>
+                </ion-item>
+            </ion-col>
 
+            <ion-col>
+                <ion-item>
+                    <ion-input placeholder = "Apellido" clearInput value="Doe" required="true"></ion-input>
+                </ion-item>
+            </ion-col>
+          </ion-row>
+
+  
+      <ion-row>
+        <ion-col>
+          <ion-item>
+              <ion-icon name="at" item-start></ion-icon>
+              <ion-input placeholder = "Email" keyboard = "email" value = "johndoe@mail.com" required = "true"></ion-input>
+          </ion-item>
+        </ion-col>
+  
+        <ion-col>
+          <ion-item>
+              <ion-icon name="call" item-start></ion-icon>
+              <ion-input placeholder = "Número Telefónico" type = "tel" value="809-123-4567" required="true"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+  
+      </ion-grid>
 </ion-content>
