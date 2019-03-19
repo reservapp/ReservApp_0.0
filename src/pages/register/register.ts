@@ -2,13 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 
-/**
- * Generated class for the RegisterPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-register',
@@ -19,7 +12,7 @@ export class RegisterPage {
   userLastname:string;
   email:string;
   password:string;
-  repassword:string;
+  repPassword:string;
   phoneNumber: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -34,7 +27,7 @@ export class RegisterPage {
     //   alert("Por favor llene todos los campos");
     // }
 
-    if (this.password != this.repassword) {
+    if (this.password != this.repPassword) {
       alert("Las contraseñas no coinciden");
     }
 
