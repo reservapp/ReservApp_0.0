@@ -35,7 +35,7 @@ export class AccountPage {
       buttons: [
         {
           text: 'Facebook',
-          role: 'destructive',
+          role: 'Facebook',
           handler: () => {
             console.log('Facebook clicked');
           }
