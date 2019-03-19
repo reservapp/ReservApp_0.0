@@ -5,8 +5,51 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-      <ion-icon name="card"></ion-icon>
-      <ion-input placeholder = "Numero de tarjeta" required="true"></ion-input>
-  </ion-item>
+
+  <ion-grid>
+      <ion-row></ion-row>
+      <ion-row>
+          <ion-col>
+              <ion-item>
+                  <ion-icon name="person" item-start></ion-icon>
+                  <ion-input placeholder = "Nombre del titular" required="true"></ion-input>
+              </ion-item>
+          </ion-col>
+        </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <ion-item>
+              <ion-icon name="card" item-start></ion-icon>
+              <ion-input placeholder = "Numero de tarjeta" keyboard = "number" required="true"></ion-input>
+          </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-icon name="timer" item-start></ion-icon>
+            <ion-input placeholder = "Vencimiento" keyboard = "number" required = "true"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+            <ion-icon name="card" item-start></ion-icon>
+            <ion-input placeholder = "CCV" required="true"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-icon name="pin" item-start></ion-icon>
+            <ion-input placeholder = "Dirección de facturación"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
 </ion-content>

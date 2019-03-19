@@ -13,14 +13,14 @@
       <ion-row>
         <ion-col>
             <ion-item>
-                <ion-icon name="calendar"></ion-icon>
+                <ion-icon name="calendar" item-start></ion-icon>
                 <ion-label>Fecha de la reservacion</ion-label>
                 <ion-datetime display-format="DD,MM YYYY HH:mm" required="true"></ion-datetime>
             </ion-item>
         </ion-col>
         <ion-col>
             <ion-item>
-              <ion-icon name="clock"></ion-icon>
+              <ion-icon name="time" item-start></ion-icon>
               <ion-label>Hora de la reservacion</ion-label>
               <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" required="true"></ion-datetime>
             </ion-item>
@@ -30,7 +30,7 @@
       <ion-row>
         <ion-col col-6>
             <ion-item>
-                <ion-icon name="person"></ion-icon>
+                <ion-icon name="person" item-start></ion-icon>
               <ion-input placeholder="Nombre" required="true" [(ngModel)]="userName"></ion-input>
             </ion-item>
           </ion-col>
@@ -45,7 +45,7 @@
       <ion-row>
         <ion-col>
             <ion-item>
-                <ion-icon name="at"></ion-icon>
+                <ion-icon name="at" item-start></ion-icon>
                 <ion-input placeholder="Correo" required="true" [(ngModel)]="email"></ion-input>
             </ion-item>
         </ion-col>
