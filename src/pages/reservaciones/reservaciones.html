@@ -58,6 +58,7 @@
 
           <ion-col>
               <ion-item no-lines>
+                <ion-icon name="people" item-start></ion-icon>
                 <ion-label>Tipo de mesas</ion-label>
                 <ion-select [(ngModel)]="KindOfTable">
                   <ion-option value="1">Pequeña</ion-option>
@@ -69,6 +70,7 @@
 
         <ion-col>
           <ion-item no-lines>
+              <ion-icon name="people" item-start></ion-icon>
             <ion-label>Cantidad de mesas</ion-label>
             <ion-select [(ngModel)]="NumberOfTables">
               <ion-option value="1">1</ion-option>
@@ -84,5 +86,5 @@
       </ion-row>
     </ion-grid>
 
-    <button ion-button block full round>Verificar</button>
+    <button ion-button block full round>Enviar</button>
   </ion-content>

@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { AccountPage } from '../pages/account/account';
 import { PaymentMethodPage } from '../pages/payment-method/payment-method';
 import { EditProfilePage } from '../pages/edit-profile/edit-profile';
+import { HelpPage } from '../pages/help/help';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +29,8 @@ import { CalendarModule } from 'ionic3-calendar-en';
     TabsPage,
     AccountPage,
     PaymentMethodPage,
-    EditProfilePage
+    EditProfilePage,
+    HelpPage
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import { CalendarModule } from 'ionic3-calendar-en';
     TabsPage,
     AccountPage,
     PaymentMethodPage,
-    EditProfilePage
+    EditProfilePage,
+    HelpPage
   ],
   providers: [
     StatusBar,
