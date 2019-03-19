@@ -52,13 +52,32 @@
       </ion-row>
   
       <ion-row>
+
+          <ion-col>
+              <ion-item no-lines>
+                <ion-label>Tipo de mesas</ion-label>
+                <ion-select [(ngModel)]="KindOfTable">
+                  <ion-option value="1">Pequeña</ion-option>
+                  <ion-option value="2">Mediana</ion-option>
+                  <ion-option value="3">Grande</ion-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+
+        <ion-col>
           <ion-item no-lines>
-              <ion-label color="thirdColorSet">Cantidad de mesas/lugares</ion-label>
-              <ion-range min="0" max="10" pin="true" step="1" [(ngModel)]="cantPeople">
-                <ion-icon range-left name="pricetag" color="primary"></ion-icon>
-                <ion-icon range-right name="pricetags" color="primary"></ion-icon>
-              </ion-range>
+            <ion-label>Cantidad de mesas</ion-label>
+            <ion-select [(ngModel)]="NumberOfTables">
+              <ion-option value="1">1</ion-option>
+              <ion-option value="2">2</ion-option>
+              <ion-option value="3">3</ion-option>
+              <ion-option value="4">4</ion-option>
+              <ion-option value="5">5</ion-option>
+              <ion-option value="6">6</ion-option>
+            </ion-select>
           </ion-item>
+        </ion-col>
+
       </ion-row>
     </ion-grid>
   

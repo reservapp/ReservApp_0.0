@@ -42,30 +42,8 @@
         <ion-col col-1></ion-col>
         <ion-col>
             <ion-item>
-                <ion-icon name="calendar" item-start></ion-icon>
-                <button ion-button block full round>Mis reservaciones</button>
-            </ion-item>
-        </ion-col>
-        <ion-col col-1></ion-col>
-      </ion-row>
-
-      <ion-row text-center>
-        <ion-col col-1></ion-col>
-        <ion-col>
-            <ion-item>
-                <ion-icon name="lock" item-start></ion-icon>
-                <button ion-button block full round>Cambiar contrasena</button>
-              </ion-item>
-        </ion-col>
-        <ion-col col-1></ion-col>
-      </ion-row>
-
-      <ion-row text-center>
-        <ion-col col-1></ion-col>
-        <ion-col>
-            <ion-item>
                 <ion-icon name="card" item-start></ion-icon>
-                <button ion-button block full round>Metodo de pago</button>
+                <button ion-button full round (click) = "goToPaymentMethods()">Métodos de pago</button>
             </ion-item>
         </ion-col>
         <ion-col col-1></ion-col>
@@ -76,7 +54,7 @@
         <ion-col>
             <ion-item>
               <ion-icon name="help" item-start></ion-icon>
-              <button ion-button block full round>Ayuda</button>
+              <button ion-button block full round (click) = "showHelp()">Ayuda</button>
             </ion-item>
         </ion-col>
         <ion-col col-1></ion-col>
