@@ -14,9 +14,12 @@
                     <ion-input placeholder = "Nombre" clearInput value = "John" required="true"></ion-input>
                 </ion-item>
             </ion-col>
+          </ion-row>
 
+          <ion-row>
             <ion-col>
                 <ion-item>
+                    <ion-icon name="person" item-start></ion-icon>
                     <ion-input placeholder = "Apellido" clearInput value="Doe" required="true"></ion-input>
                 </ion-item>
             </ion-col>
@@ -30,7 +33,9 @@
               <ion-input placeholder = "Email" keyboard = "email" value = "johndoe@mail.com" required = "true"></ion-input>
           </ion-item>
         </ion-col>
-  
+      </ion-row>
+      
+      <ion-row>
         <ion-col>
           <ion-item>
               <ion-icon name="call" item-start></ion-icon>
@@ -38,6 +43,16 @@
           </ion-item>
         </ion-col>
       </ion-row>
-  
-      </ion-grid>
+
+      <ion-row><ion-col></ion-col></ion-row>
+      <ion-row><ion-col></ion-col></ion-row>
+
+      <ion-row>
+        <ion-col col-3></ion-col>
+        <ion-col>
+          <button ion-button full round>Guardar cambios</button>
+        </ion-col>
+        <ion-col col-3></ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>
