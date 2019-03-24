@@ -15,7 +15,6 @@ export class DatabaseProvider {
   private databaseReady: BehaviorSubject<boolean>;
 
   constructor(public http: Http, public sqlitePorter: SQLitePorter, private storage: Storage, private sqlite: SQLite, private platform: Platform) {
-    console.log('Hello DatabaseProvider Provider');
 
     this.databaseReady = new BehaviorSubject(false);
     this.platform.ready().then(() => {
@@ -61,6 +60,29 @@ export class DatabaseProvider {
     });
   }
 
+  getUserByUserId(userId: number){
+    let data = [userId];
+    return this.database.executeSql("SELECT * FROM users WHERE id =  (?)", data).then(data => {
+      return {id: data.rows.item(0).id,
+                    userName: data.rows.item(0).userName,
+                    userLastname: data.rows.item(0).userLastname,
+                    email: data.rows.item(0).email,
+                    userPassword: data.rows.item(0).userPassword,
+                    phone: data.rows.item(0).phone};
+    }).catch(err => {
+      console.log("It does not work", err);
+      return err
+    })
+  }
+
+  getUser(email, userName) {
+    let data = [email, userName]
+    return this.database.executeSql("SELECT * FROM users WHERE email = ? OR userName = ? ", data).then(data => {
+      return data;
+    }, err => {
+      console.log("Error: ", err)
+    });
+  }
 
   getAllUsers() {
     return this.database.executeSql("SELECT * FROM users", []).then((data) => {
@@ -77,6 +99,20 @@ export class DatabaseProvider {
     });
   }
 
+
+  validateUser(email, userPassword) {
+    let data = [email, userPassword]
+    return this.database.executeSql("SELECT * FROM users WHERE userName = ? AND email = ? ", data).then(data => {
+      if(data.rows.length > 0)
+      {
+        this.storage.set('userid', data.rows.item(0).id);
+        return true
+      }
+      return "Usuario o contrasena incorrecto"
+    }, err => {
+      console.log("Error: ", err)
+    });
+  }
 
   getDatabaseState() {
     return this.databaseReady.asObservable();
