@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS paymentMethod(
     expiration TEXT,
     cvv TEXT,
     billingAddress TEXT,
-    FOREIGN KEY(userId) REFERENCES users(id),);
+    FOREIGN KEY(userId) REFERENCES users(id));
 
 INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Josias', 'Carmona', 'josca@mail.com', 'p@ssword', '8091234567');
 INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Jhonncell', 'Jimenez', 'jhoji@mail.com', 'p@ssword', '8091234567');
