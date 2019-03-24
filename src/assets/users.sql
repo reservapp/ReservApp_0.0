@@ -22,4 +22,4 @@ INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('
 INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Raymond', 'Rowlland', 'rayro@mail.com', 'p@ssword', '8091234567');
 
 
-INSERT INTO paymentMethod(cardNumber, expiration, cvv, billingAddress) VALUES ('2034123456574837', '1256', '112', 'C/ Renovacion No.60, Villa Concepcion');
+INSERT INTO paymentMethod(cardNumber, expiration, cvv, billingAddress) VALUES ('2034123656574837', '1256', '112', 'C/ Renovacion No.60, Villa Concepcion');
