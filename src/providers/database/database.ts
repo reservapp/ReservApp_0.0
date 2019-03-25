@@ -102,10 +102,10 @@ export class DatabaseProvider {
 
   validateUser(email, userPassword) {
     let data = [email, userPassword]
-    return this.database.executeSql("SELECT * FROM users WHERE userName = ? AND email = ? ", data).then(data => {
+    return this.database.executeSql("SELECT * FROM users WHERE email = ? AND userPassword = ? ", data).then(data => {
       if(data.rows.length > 0)
       {
-        this.storage.set('userid', data.rows.item(0).id);
+        this.storage.set('id', data.rows.item(0).id);
         return true
       }
       return "Usuario o contrasena incorrecto"

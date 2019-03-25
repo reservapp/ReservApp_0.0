@@ -14,6 +14,7 @@ export class LoginPage {
   email:string;
   userPassword:string;
 
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private databaseprovider: DatabaseProvider) {
   }
 
@@ -30,7 +31,7 @@ export class LoginPage {
         {
           this.navCtrl.setRoot(TabsPage, {
             email: this.email
-          })
+          });
         }
         else {
           alert(d);
