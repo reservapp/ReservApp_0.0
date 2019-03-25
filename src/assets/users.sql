@@ -40,9 +40,9 @@ CREATE TABLE IF NOT EXISTS reservation(
 
 --INSERTS--
 
-INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Josias', 'Carmona', 'josca@mail.com', 'p@ssword', '8091234567');
-INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Jhonncell', 'Jimenez', 'jhoji@mail.com', 'p@ssword', '8091234567');
-INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Raymond', 'Rowlland', 'rayro@mail.com', 'p@ssword', '8091234567');
+INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Josias', 'Carmona', 'josias@gmail.com', 'p@ssword', '8091234567');
+INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Jhonncell', 'Jimenez', 'jhonncell@gmail.com', 'p@ssword', '8091234567');
+INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Raymond', 'Rowlland', 'raymond@gmail.com', 'p@ssword', '8091234567');
 
 
 INSERT INTO paymentMethod(userId, cardNumber, expiration, cvv, billingAddress) VALUES (1, '2034123656574837', '1256', '112', 'C/ Renovacion No.60, Villa Concepcion');
