@@ -45,10 +45,10 @@ INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('
 INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Raymond', 'Rowlland', 'rayro@mail.com', 'p@ssword', '8091234567');
 
 
-INSERT INTO paymentMethod(cardNumber, expiration, cvv, billingAddress) VALUES ('2034123656574837', '1256', '112', 'C/ Renovacion No.60, Villa Concepcion');
+INSERT INTO paymentMethod(userId, cardNumber, expiration, cvv, billingAddress) VALUES (1, '2034123656574837', '1256', '112', 'C/ Renovacion No.60, Villa Concepcion');
 
 INSERT INTO disco(discoName) VALUES ('JetSet');
 INSERT INTO disco(discoName) VALUES ('Kaprich');
 INSERT INTO disco(discoName) VALUES ('Napolitano Disco');
 
-INSERT INTO reservation (customer,reservationDate, hour) VALUES ('', '30/03/2019','19:30');
+INSERT INTO reservation (customer,reservationDate, hour) VALUES (1, '30/03/2019','19:30');
