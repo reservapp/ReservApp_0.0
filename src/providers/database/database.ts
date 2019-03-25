@@ -99,6 +99,15 @@ export class DatabaseProvider {
     });
   }
 
+  getAllReservationsByEmail(email){
+    let data = [email]
+    return this.database.executeSql("SELECT * FROM reservation WHERE customer = ?", data).then(data => {
+      return data;
+    }, err => {
+      console.log("Error: ", err)
+    });
+  }
+
 
   validateUser(email, userPassword) {
     let data = [email, userPassword]
