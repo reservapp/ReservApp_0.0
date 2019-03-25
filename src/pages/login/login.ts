@@ -23,7 +23,7 @@ export class LoginPage {
   }
 
   login(){
-    if(this.email != '' && this.userPassword != '')
+    if(this.email !== '' && this.userPassword !== '')
     {
       this.databaseprovider.validateUser(this.email, this.userPassword).then(d => {
         console.log(d);

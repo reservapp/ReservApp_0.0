@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+
     <ion-grid>
       <ion-row>
         <ion-col col-6>
@@ -19,26 +19,35 @@
               </ion-item>
         </ion-col>
       </ion-row>
-      </ion-grid>
+     
 
-
+    <ion-row>
       <ion-item>
-          <ion-input placeholder="Correo" required="true" type = "email" [(ngModel)]="user.email"></ion-input>
-      </ion-item>
-
+        <ion-input placeholder="Correo" required="true" type = "email" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    </ion-row>
+     
+    <ion-row>
       <ion-item>
-          <ion-input placeholder="Contraseña" required="true" type="password" [(ngModel)]="user.userPassword"></ion-input>
-      </ion-item>
-
+        <ion-input placeholder="Contraseña" required="true" type="password" [(ngModel)]="user.userPassword"></ion-input>
+    </ion-item>
+    </ion-row>
+      
+    <ion-row>
       <ion-item>
-          <ion-input placeholder="Confirmar contraseña" required="true" type="password" [(ngModel)]="repPassword"></ion-input>
-      </ion-item>
+        <ion-input placeholder="Confirmar contraseña" required="true" type="password" [(ngModel)]="repPassword"></ion-input>
+    </ion-item>
+    </ion-row>
 
+    <ion-row>
       <ion-item>
-          <ion-input placeholder="Numero de telefono" required="true" type="tel" inputmode="tel" maxlength="10" [(ngModel)]="user.phone"></ion-input>
-      </ion-item>
-   </ion-list>
+        <ion-input placeholder="Numero de telefono" required="true" type="tel" inputmode="tel" maxlength="10" [(ngModel)]="user.phone"></ion-input>
+    </ion-item>
+    </ion-row>
 
+      
+
+  </ion-grid>
   <button ion-button block full round (click) ="register()">Registrar</button>
 
 </ion-content>
