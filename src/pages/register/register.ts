@@ -10,12 +10,12 @@ import { DatabaseProvider } from '../../providers/database/database';
 })
 export class RegisterPage {
 
-  userName: string;
-  userLastname: string;
-  email: string;
-  userPassword: string;
-  userRePassword: string;
-  phone: string;
+  userName= '';
+  userLastname= '';
+  email= '';
+  userPassword= '';
+  userRePassword= '';
+  phone= '';
   user = {};
   users = [];
 
