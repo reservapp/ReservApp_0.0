@@ -10,12 +10,14 @@ import { DatabaseProvider } from '../../providers/database/database';
 })
 export class RegisterPage {
 
-  userName= '';
-  userLastname= '';
-  email= '';
-  userPassword= '';
-  userRePassword= '';
-  phone= '';
+  userName:string;
+  userLastname:string;
+  email:string;
+  userPassword:string;
+  repPassword:string;
+  phone:string;
+
+
   user = {};
   users = [];
 
@@ -29,13 +31,13 @@ export class RegisterPage {
 
   register(){
 
-    if(this.userName === '' || this.userLastname === '' || this.phone === '' || this.userPassword === '' || this.userRePassword === '' || this.email === '')
+    if(this.userName == '' || this.userLastname == '' || this.phone == '' || this.userPassword == '' || this.repPassword == '' || this.email == '')
     {
       alert("Para continuar complete todos los campos");
     }
     else
     {
-      if(this.userPassword != this.userRePassword)
+      if(this.userPassword != this.repPassword)
       {
         alert("las contraseñas deben ser iguales");
       }

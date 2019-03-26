@@ -10,12 +10,12 @@
       <ion-row>
         <ion-col col-6>
             <ion-item>
-                <ion-input placeholder="Nombre" required="true" [(ngModel)]="user.userName"></ion-input>
+                <ion-input placeholder="Nombre" required="true" [(ngModel)]="userName"></ion-input>
               </ion-item>
         </ion-col>
         <ion-col col-6>
             <ion-item>
-                <ion-input placeholder="Apellido" required="true" [(ngModel)]="user.userLastname"></ion-input>
+                <ion-input placeholder="Apellido" required="true" [(ngModel)]="userLastname"></ion-input>
               </ion-item>
         </ion-col>
       </ion-row>
@@ -23,13 +23,13 @@
 
     <ion-row>
       <ion-item>
-        <ion-input placeholder="Correo" required="true" type = "email" [(ngModel)]="user.email"></ion-input>
+        <ion-input placeholder="Correo" required="true" type = "email" [(ngModel)]="email"></ion-input>
     </ion-item>
     </ion-row>
      
     <ion-row>
       <ion-item>
-        <ion-input placeholder="Contraseña" required="true" type="password" [(ngModel)]="user.userPassword"></ion-input>
+        <ion-input placeholder="Contraseña" required="true" type="password" [(ngModel)]="userPassword"></ion-input>
     </ion-item>
     </ion-row>
       
@@ -41,7 +41,7 @@
 
     <ion-row>
       <ion-item>
-        <ion-input placeholder="Numero de telefono" required="true" type="tel" inputmode="tel" maxlength="10" [(ngModel)]="user.phone"></ion-input>
+        <ion-input placeholder="Numero de telefono" required="true" type="tel" inputmode="tel" maxlength="10" [(ngModel)]="phone"></ion-input>
     </ion-item>
     </ion-row>
 
