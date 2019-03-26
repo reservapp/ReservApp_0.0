@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS reservation(
 
 
 --INSERTS--
-
+/*
 INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Josias', 'Carmona', 'josias@gmail.com', 'p@ssword', '8091234567');
 INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Jhonncell', 'Jimenez', 'jhonncell@gmail.com', 'p@ssword', '8091234567');
 INSERT INTO users (userName, userLastname, email, userPassword, phone) VALUES ('Raymond', 'Rowlland', 'raymond@gmail.com', 'p@ssword', '8091234567');
@@ -52,3 +52,5 @@ INSERT INTO disco(discoName) VALUES ('Kaprich');
 INSERT INTO disco(discoName) VALUES ('Napolitano Disco');
 
 INSERT INTO reservation (customer,reservationDate, hour) VALUES (1, '30/03/2019','19:30');
+
+*/

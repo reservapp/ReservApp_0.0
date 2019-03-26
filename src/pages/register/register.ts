@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
 import { DatabaseProvider } from '../../providers/database/database';
 
 
@@ -49,12 +48,12 @@ export class RegisterPage {
           if (d.rows.length <= 0)
           {
             this.databaseprovider.addUser(this.userName, this.userLastname,this.email,this.userPassword,this.phone).then(d => {
-              alert('Se ha registrado correctamente!')
+              alert('Se ha registrado correctamente!');
             });
             this.navCtrl.popToRoot();
           }
           else {
-            alert("Ese usuario o email ya esta registrado")
+            alert("Ese usuario o email ya esta registrado");
           }
         });
 

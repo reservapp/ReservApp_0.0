@@ -29,6 +29,7 @@ export class LoginPage {
           console.log(d);
           if (d == true)
           {
+
             this.navCtrl.setRoot(TabsPage);
           }
           else {

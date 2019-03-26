@@ -15,14 +15,14 @@
             <ion-item>
                 <ion-icon name="calendar" item-start></ion-icon>
                 <ion-label>Fecha de la reservacion</ion-label>
-                <ion-datetime display-format="DD,MM YYYY HH:mm" required="true"></ion-datetime>
+                <ion-datetime display-format="DD,MM YYYY HH:mm" required="true" [(ngModel)] = "date"></ion-datetime>
             </ion-item>
         </ion-col>
         <ion-col>
             <ion-item>
               <ion-icon name="time" item-start></ion-icon>
               <ion-label>Hora de la reservacion</ion-label>
-              <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" required="true"></ion-datetime>
+              <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" required="true" [(ngModel)] = "hour"></ion-datetime>
             </ion-item>
         </ion-col>
       </ion-row>
@@ -86,5 +86,5 @@
       </ion-row>
     </ion-grid>
 
-    <button ion-button block full round>Enviar</button>
+    <button ion-button block full round (click)="Reserve">Enviar</button>
   </ion-content>

@@ -11,11 +11,10 @@ import { HelpPage } from '../help/help';
 })
 export class AccountPage {
 
-  Username_:string = "John Doe";
   UserName:string = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public asCtrl: ActionSheetController) {
-    this.UserName = this.Username_;
+    this.UserName;
   }
 
   ionViewDidLoad() {

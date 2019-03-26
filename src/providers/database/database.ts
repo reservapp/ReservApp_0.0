@@ -75,6 +75,16 @@ export class DatabaseProvider {
     })
   }
 
+  getUserNameByEmail(email) {
+    let data = [email]
+    return this.database.executeSql("SELECT * FROM users WHERE email = ?", data).then(data => {
+      return {userName: data.rows.item(0).userName};
+    }, err => {
+      console.log("Error: ", err)
+    });
+  }
+
+
   getUser(email, userName) {
     let data = [email, userName]
     return this.database.executeSql("SELECT * FROM users WHERE email = ? OR userName = ? ", data).then(data => {
